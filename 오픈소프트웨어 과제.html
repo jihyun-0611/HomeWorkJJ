@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#scroll_1{width: 24% height: 200px; overflow:auto;}
+
+	</style>
+	<title>오픈소프트웨어 과제-재고 관리 시스템</title>
+</head>
+<body>
+	<h2>재고 관리 시스템</h2>
+    
+    <form>
+    	<input type="text" size="6" value="품번" id="create_1"> 
+        ,
+    	<input type="text" size="6" value="색상"> 
+    	,
+    	<input type="text" size="6" value="사이즈"> 
+    	,
+    	<input type="button" size="3" value="등록" onclick="add();"> 
+
+    	<br><br><br>
+
+    	<table border="4" id="scroll_1">
+    		<tr>
+    			 <th colspan="5"> 목록</th> 
+    		</tr>
+			<tr>
+				<th>품번</th> <th>색상</th> <th>사이즈</th> <th>수량</th> 
+			</tr>
+			
+			<tr>
+				<td><input type="text" size="8" value="품번" id=create_11></td> 
+				<td><input type="text" size="8" value="색상" id=create_11> </td> 
+				<td><input type="text" size="8" value="사이즈" id=create_11> </td> 
+				<td><input type="text" size="8" value="0" id=create_11 ></td> 
+				<td><input type="button" value="삭제" onclick=""></td>
+			</tr>
+			<tr>
+				<td><input type="text" size="8" value="품번" id=create_11></td> 
+				<td><input type="text" size="8" value="색상" id=create_11> </td> 
+				<td><input type="text" size="8" value="사이즈" id=create_11> </td> 
+				<td><input type="text" size="8" value="0" id=create_11 ></td> 
+				<td><input type="button" value="삭제" onclick=""></td>
+
+			</tr>
+			<tr>
+				<td><input type="text" size="8" value="품번" id=create_11></td> 
+				<td><input type="text" size="8" value="색상" id=create_11> </td> 
+				<td><input type="text" size="8" value="사이즈" id=create_11> </td> 
+				<td><input type="text" size="8" value="0" id=create_11 ></td> 
+				<td><input type="button" value="삭제" onclick=""></td>
+			</tr>
+			<tr>
+			    <td><input type="text" size="8" value="품번" id=create_11></td> 
+				<td><input type="text" size="8" value="색상" id=create_11> </td> 
+				<td><input type="text" size="8" value="사이즈" id=create_11> </td> 
+				<td><input type="text" size="8" value="0" id=create_11 ></td> 
+				<td><input type="button" value="삭제" onclick=""></td>
+			</tr>
+			<tr>
+			    <td><input type="text" size="8" value="품번" id=create_11></td> 
+				<td><input type="text" size="8" value="색상" id=create_11> </td> 
+				<td><input type="text" size="8" value="사이즈" id=create_11> </td> 
+				<td><input type="text" size="8" value="0" id=create_11 ></td> 
+				<td><input type="button" value="삭제" onclick=""></td>
+			</tr>
+			<tr>
+			    <td><input type="text" size="8" value="품번" id=create_11></td> 
+				<td><input type="text" size="8" value="색상" id=create_11> </td> 
+				<td><input type="text" size="8" value="사이즈" id=create_11> </td> 
+				<td><input type="text" size="8" value="0" id=create_11 ></td> 
+				<td><input type="button" value="삭제" onclick=""></td>
+			</tr>
+
+            <tr>
+			    <td><input type="text" size="8" value="품번" id=create_11></td> 
+				<td><input type="text" size="8" value="색상" id=create_11> </td> 
+				<td><input type="text" size="8" value="사이즈" id=create_11> </td> 
+				<td><input type="text" size="8" value="0" id=create_11 ></td> 
+				<td><input type="button" value="삭제" onclick=""></td>
+			</tr>
+            <tr>
+			    <td><input type="text" size="8" value="품번" id=create_11></td> 
+				<td><input type="text" size="8" value="색상" id=create_11> </td> 
+				<td><input type="text" size="8" value="사이즈" id=create_11> </td> 
+				<td><input type="text" size="8" value="0" id=create_11 ></td> 
+				<td><input type="button" value="삭제" onclick=""></td>
+			</tr>
+
+
+		</table> <br />
+		<input type="button" value="찾아보기" onclick="update();">
+		<input type="reset" value="초기화"/>
+
+    </form>
+    <br><br><br><br>
+
+
+    <form>
+    	<table border="3" id="scroll_1">
+    		<tr>
+    			 <th colspan="7"> 사이즈</th> 
+    		</tr>
+			<tr>
+				<th>품번</th> <th>S</th> <th>M</th> <th>L</th> <th>XL</th>  <th>2XL</th> 
+			</tr>
+    	<tr>
+			    <td><input type="text" size="8" value="품번" id=create_11></td> 
+				<td><input type="text" size="8" value="0" id=create_11> </td> 
+				<td><input type="text" size="8" value="0" id=create_11> </td> 
+				<td><input type="text" size="8" value="0" id=create_11 ></td> 
+				<td><input type="text" size="8" value="0" id=create_11 ></td> 
+				<td><input type="text" size="8" value="0" id=create_11 ></td> 
+				<td><input type="button" value="삭제" onclick=""></td>
+			</tr>
+
+
+    </form>
+
+	<script type="text/javascript">
+	function update()
+	{
+		var n1=document.getElementById("create_1").value;
+		n1=document.getElementById("create_11").value;
+
+	}
+
+
+
+	</script>
+
+</body>
+</html>

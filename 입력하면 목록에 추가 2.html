@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#scroll_1{width: 24% height: 200px; overflow:auto;}
+
+	</style>
+	<title>오픈소프트웨어 과제-재고 관리 시스템</title>
+</head>
+<body>
+	<h2>재고 관리 시스템</h2>
+    
+    <form method="post" action>
+    	<input type="text" size="6" value="품번" id="number" onclick="this.select();"> 
+        
+    	<input type="text" size="6" value="색상" id="color" onclick="this.select();"> 
+    	
+    	<input type="text" size="6" value="사이즈" id="siz" onclick="this.select();"> 
+    	
+    	<input type="text" size="6" value="수량" id="quantity" onclick="this.select();"> 
+    	
+    	<input type="button" size="3" value="등록"  onclick="addList();" > 
+
+    	<br><br><br>
+
+    	<table border="4" id="testTable" bordercolor="silver" width ="700"   id="sTable">
+    		<thead>
+    		    <tr>
+    			    <th colspan="8"> 목록</th> 
+    		    </tr>
+    		    <tr>
+				    <th colspan="2" >품번</th>  <th colspan="2">색상</th> <th colspan="2">사이즈</th> <th colspan="2">수량</th> 
+				    
+			    </tr>
+			    
+
+			    
+			    
+    	    </thead>
+
+			<tbody id="tbody"> </tbody>
+			
+		</table> <br />
+		<input type="button" value="찾아보기" onclick="update();">
+		<input type="reset" value="초기화"/>
+		<input type="button" value="삭제" onclick="deleteList()">
+		<button type="button" class="btn_delete" >123123</button>
+
+    </form>
+    <br><br><br><br>
+    <script type="text/javascript" src="List.js">
+    
+
+
+    	
+    </script>
+
+</body>
+</html>

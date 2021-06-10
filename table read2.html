@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <style type="text/css">
+      
+      #myTable { width: 500px;  border-collapse: collapse; }
+      #myTable th,
+      #myTable td { padding: 5px 12px; text-align: center; border: 1px solid #ccc; }
+      #myTable th { background: #eee; }
+      
+
+
+   </style>
+   <title>오픈소프트웨어 과제-재고 관리 시스템</title>
+</head>
+<body>
+   
+
+   <h2>재고 관리 시스템</h2>
+    
+    <form class="cce">
+       <input type="text" size="6" value="품번" id="number" onclick="this.select();"> 
+        
+       <input type="text" size="6" value="색상" id="color" onclick="this.select();"> 
+       
+       <input type="text" size="6" value="사이즈" id="siz" onclick="this.select();"> 
+       
+       <input type="text" size="6" value="수량" id="quantity" onclick="this.select();" > 
+       
+       <input type="button" size="3" value="등록"  onclick="addList();" > 
+
+       <br><br><br>
+
+        <table border="4" bordercolor="silver" width ="700" id="myTable" >
+          <thead>
+              <tr>
+                <th colspan="8"> 목록</th> 
+              </tr>
+              <tr>
+                <th colspan="1" >품번</th>  <th colspan="1">색상</th> <th colspan="1">사이즈</th> <th colspan="1">수량</th> <th colspan="1"></th> 
+                
+              </tr>
+          </thead>
+
+         <tbody id="tbody" >
+           <tr>
+             <td>20103</td><td>White</td><td>XS</td><td>3</td>
+             <td><input type="button" value = "삭제" onClick="Javacsript:deleteRow(this)"></td>
+           </tr>
+           <tr>
+             <td>20208</td><td>Black</td><td>M</td><td>9</td>
+             <td><input type="button" value = "삭제" onClick="Javacsript:deleteRow(this)"></td>
+           </tr>
+           <tr>
+             <td>20321</td><td>Black</td><td>L</td><td>3</td>
+             <td><input type="button" value = "삭제" onClick="Javacsript:deleteRow(this)"></td>
+           </tr>
+           <tr>
+             <td>20114</td><td>Grey</td><td>XL</td><td>5</td>
+             <td><input type="button" value = "삭제" onClick="Javacsript:deleteRow(this)"></td>
+           </tr>
+           <tr>
+             <td>20101</td><td>Blue</td><td>S</td><td>1</td>
+             <td><input type="button" value = "삭제" onClick="Javacsript:deleteRow(this)"></td>
+           </tr>
+         </tbody>
+        </table>
+
+        <input type="text" id="search_in" value="상품 번호를 입력하시오." onclick="this.select();">
+        <input type="button" value="찾아보기" onclick="readRow();"  >
+        
+        <table border="4" bordercolor="silver" width ="700" id="reTable" >
+          <thead>
+              <tr>
+                <th colspan="8"> 목록</th> 
+              </tr>
+              <tr>
+                <th colspan="1" >품번</th>  <th colspan="1">색상</th> <th colspan="1">사이즈</th> <th colspan="1">수량</th> <th colspan="1"></th> 
+                
+              </tr>
+          </thead>
+          <tbody id="rebody" >
+            
+          </tbody>
+      
+
+      <input type="reset" value="초기화"/    >
+    </form>
+
+
+
+    <br><br><br><br>
+    <script type="text/javascript" src="finalRead22.js">
+    </script>
+
+</body>
+</html>
